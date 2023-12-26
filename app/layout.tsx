@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { ReactQueryProvider } from "./_providers/ReactQueryProvider";
+import CustomThemeController from "./(saas)/_providers/CustomThemeController";
 
 export const metadata: Metadata = {
   title: "Saas App",
@@ -12,8 +14,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
-    </html>
+    <ReactQueryProvider>
+      <CustomThemeController>{children}</CustomThemeController>
+    </ReactQueryProvider>
   );
 }
