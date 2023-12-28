@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import { Button, Dropdown, Menu, Navbar } from "react-daisyui";
 

@@ -15,7 +15,9 @@ const HeroView = () => {
             a id nisi.
           </p>
 
-          <Button color="primary">Get Started</Button>
+          <Button variant="outline" size="xs" color="primary">
+            Get Started
+          </Button>
         </div>
       </Hero.Content>
     </Hero>

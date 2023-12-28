@@ -13,9 +13,5 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <ReactQueryProvider>
-      <CustomThemeController>{children}</CustomThemeController>
-    </ReactQueryProvider>
-  );
+  return <ReactQueryProvider>{children}</ReactQueryProvider>;
 }
